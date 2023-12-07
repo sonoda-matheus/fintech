@@ -1,0 +1,104 @@
+:root{
+  --color-pink: #ca3452;
+  --color-light: #F3F4F5;
+  --color-logo: #818100;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+body{
+  /* background-image:linear-gradient(to top, #4c6c81, #011831 ); */
+  background: url("images/bg-image.svg");
+  background-size: cover;
+  background-attachment:fixed;
+  
+  background-repeat: no-repeat ;
+ 
+}
+.container {
+  width: 60%;
+  max-width: 576px;
+  margin-bottom: 1rem;
+  /* height: auto;  */
+  /* margin: 20px auto; */
+  /* padding: 5px; */
+  /* border: 1px solid; */
+  /* border-radius: 10px; */
+  background-color: var(--bs-gray-700);
+  
+}
+h1{
+  margin: 20px;
+  color: var(--color-logo);
+  
+}
+/* fieldset{
+  margin: 2rem;
+  border: 0cap;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  margin: .5rem 0;
+} */
+
+.box-item{
+  /* display: flex; 
+  flex-direction: column; */
+  margin: .5rem;
+  
+}
+
+.form-label{
+  display: block;
+  color: var(--bs-link-color);
+}
+.bk-button{
+  width: 100%;
+  padding: 0.6rem;
+  background-color: rgb(189, 189, 189);
+  font-size: 1.6rem;
+  margin: 10px auto;
+}
+
+.input-control{
+  width: 100%;
+  display: flex; 
+  flex-direction: column;
+
+}
+
+/* bloco para retirar as setas que aparecem na caixa type number
+ou seja nos campos de cpf e rg */
+input[type=number]::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+}
+
+
+
+/* .input-control{
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 6px; 
+  background-color: var(--bs-gray-200);
+  border-color:  var(-bs-green);
+} */
+
+.input-control:focus, .form-control:focus {
+  box-shadow: 2px 2px var(--bs-blue); 
+  border: 0 none;
+  outline: 0;
+}
+.bk-button:hover{
+  background-color: var(--color-logo);
+  /* border: 0 none;
+  box-shadow: 0 0 0 0; */
+  
+}
+
+.form-control:focus{
+  border: none;
+  box-shadow: 0 0 0 0;
+}
