@@ -1,7 +1,7 @@
 :root{
   --color-pink: #ca3452;
   --color-light: #F3F4F5;
-  --color-logo: #818100;
+  --color-logo: #C8C800;
 }
 * {
   margin: 0;
@@ -11,16 +11,17 @@
 }
 body{
   /* background-image:linear-gradient(to top, #4c6c81, #011831 ); */
-  background: url("images/bg-image.svg");
+  background: url("/images/bg-image.svg");
   background-size: cover;
   background-attachment:fixed;
   
   background-repeat: no-repeat ;
+  
  
 }
 .container {
-  width: 60%;
-  max-width: 576px;
+  width: 40%;
+  min-width: 576px;
   margin-bottom: 1rem;
   /* height: auto;  */
   /* margin: 20px auto; */
@@ -30,10 +31,18 @@ body{
   background-color: var(--bs-gray-700);
   
 }
-h1{
+header{
   margin: 20px;
   color: var(--color-logo);
+  text-align: center;
   
+}
+img{
+  width: 15%;
+  border-radius: 50%;
+}
+h1{
+  margin-top: 0;
 }
 /* fieldset{
   margin: 2rem;
@@ -101,4 +110,10 @@ input[type=number]::-webkit-inner-spin-button{
 .form-control:focus{
   border: none;
   box-shadow: 0 0 0 0;
+}
+
+footer{
+  max-height: calc(20vh - 40px);
+  position:relative;
+  bottom: 0;
 }
